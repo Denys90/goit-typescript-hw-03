@@ -19,9 +19,7 @@ abstract class House {
   protected key: Key;
   protected tenants: Person[] = [];
 
-  constructor(key: Key) {
-    this.key = key;
-  }
+  constructor(key: Key) {}
 
   comeIn(person: Person): void {
     if (this.door) {
@@ -54,3 +52,4 @@ house.openDoor(person);
 house.comeIn(person);
 
 export {};
+//
